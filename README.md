@@ -70,5 +70,32 @@ Given a Hack assembly file Max.asm with the following content:
    @END
    0;JMP
    (END)
+   ```
+
+Running the assembler will produce a binary file Max.hack with the corresponding machine code:
+
+   ```asm
+   0000000000000000
+   1111110000001000
+   0000000000000001
+   1111010011010000
+   0000000000001010
+   1110001100000001
+   0000000000000001
+   1111110000001000
+   0000000000001100
+   1110101010000111
+   0000000000000000
+   1111110000001000
+   0000000000000010
+   1110001100001000
+   0000000000001110
+   1110101010000111
+   0000000000001110
+   ```
+
+## Acknowledgements
+
+This assembler is inspired by the projects and teachings from the "Elements of Computing Systems" course, also known as Nand2Tetris. Special thanks to Noam Nisan and Shimon Schocken for their foundational work in computer science education.
 
 
