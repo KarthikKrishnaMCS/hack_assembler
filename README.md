@@ -1,5 +1,4 @@
-# Create the README.md content as a string
-readme_content = """
+
 # Hack Assembler
 
 This project is an assembler written in OCaml that translates Hack assembly language instructions into binary code for the Hack computer platform. The assembler processes assembly instructions, constructs an abstract syntax tree (AST), parses instructions, and utilizes a symbol table for variable management. The build and execution of the project are managed using Dune.
