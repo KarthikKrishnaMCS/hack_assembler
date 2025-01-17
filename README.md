@@ -43,7 +43,6 @@ Replace file.asm with your Hack assembly file.
 - **`parser.ml`**: Implements the parser that reads assembly instructions and constructs the AST.  
 - **`machine.ml`**: Handles the translation of parsed instructions into binary code.  
 - **`symbol_table.ml`**: Manages the symbol table for storing and retrieving variable addresses.  
-- **`bin/main.ml`**: The entry point of the assembler application.
 
 ## Example
 
