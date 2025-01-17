@@ -32,16 +32,43 @@ This project is an assembler written in OCaml that translates Hack assembly lang
 After building the project, run the assembler to translate Hack assembly files into binary code:
 
   ```bash
-   dune build
+   dune ./bin/main.exe > file.asm
   ```
-Replace path/to/your/assembly_file.asm with the actual path to your Hack assembly file.
+Replace file.asm with your Hack assembly file.
 
 
- ## Project Structure
+## Project Structure
 
- - **`ast.ml`**: Contains the definitions for the abstract syntax tree representing the structure of Hack assembly instructions.  
- - **`parser.ml`**: Implements the parser that reads assembly instructions and constructs the AST.  
- - **`machine.ml`**: Handles the translation of parsed instructions into binary code.  
- - **`symbol_table.ml`**: Manages the symbol table for storing and retrieving variable addresses.  
- - **`bin/main.ml`**: The entry point of the assembler application. 
+- **`ast.ml`**: Contains the definitions for the abstract syntax tree representing the structure of Hack assembly instructions.  
+- **`parser.ml`**: Implements the parser that reads assembly instructions and constructs the AST.  
+- **`machine.ml`**: Handles the translation of parsed instructions into binary code.  
+- **`symbol_table.ml`**: Manages the symbol table for storing and retrieving variable addresses.  
+- **`bin/main.ml`**: The entry point of the assembler application.
+
+## Example
+
+Given a Hack assembly file Max.asm with the following content:
+
+  ```asm
+   // This program computes R2 = max(R0, R1)
+   @R0
+   D=M
+   @R1
+   D=D-M
+   @OUTPUT_FIRST
+   D;JGT
+   @R1
+   D=M
+   @OUTPUT_D
+  0;JMP
+   (OUTPUT_FIRST)
+   @R0
+   D=M
+   (OUTPUT_D)
+   @R2
+   M=D
+   @END
+   0;JMP
+   (END)
+
 
