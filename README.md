@@ -75,7 +75,7 @@ Given a Hack assembly file Max.asm with the following content:
 
 Running the assembler will produce a binary file Max.hack with the corresponding machine code:
 
-   ```asm
+   ```hack
    0000000000000000
    1111110000001000
    0000000000000001
