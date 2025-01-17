@@ -26,3 +26,12 @@ This project is an assembler written in OCaml that translates Hack assembly lang
 1. **Build the Project Using Dune**  
    ```bash
    dune build
+
+## Usage
+
+**After building the project, you can run the assembler to translate Hack assembly files into binary code.**
+  ```bash
+  dune exec ./bin/main.exe path/to/your/assembly_file.asm
+
+**Replace path/to/your/assembly_file.asm with the actual path to the Hack assembly file you wish to assemble.**
+
