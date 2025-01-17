@@ -61,7 +61,7 @@ Given a Hack assembly file Max.asm with the following content:
    @R1
    D=M
    @OUTPUT_D
-  0;JMP
+   0;JMP
    (OUTPUT_FIRST)
    @R0
    D=M
