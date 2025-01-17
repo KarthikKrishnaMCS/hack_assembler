@@ -23,15 +23,25 @@ This project is an assembler written in OCaml that translates Hack assembly lang
 2. **Navigate to the Project Directory:**  
    ```bash
    cd hack_assembler
-1. **Build the Project Using Dune**  
+3. **Build the Project Using Dune**  
    ```bash
    dune build
 
 ## Usage
 
-**After building the project, you can run the assembler to translate Hack assembly files into binary code.**
-  ```bash
-  dune exec ./bin/main.exe path/to/your/assembly_file.asm
+After building the project, run the assembler to translate Hack assembly files into binary code:
 
-**Replace path/to/your/assembly_file.asm with the actual path to the Hack assembly file you wish to assemble.**
+  ```bash
+   dune build
+  ```
+Replace path/to/your/assembly_file.asm with the actual path to your Hack assembly file.
+
+
+ ## Project Structure
+
+ - **`ast.ml`**: Contains the definitions for the abstract syntax tree representing the structure of Hack assembly instructions.  
+ - **`parser.ml`**: Implements the parser that reads assembly instructions and constructs the AST.  
+ - **`machine.ml`**: Handles the translation of parsed instructions into binary code.  
+ - **`symbol_table.ml`**: Manages the symbol table for storing and retrieving variable addresses.  
+ - **`bin/main.ml`**: The entry point of the assembler application. 
 
