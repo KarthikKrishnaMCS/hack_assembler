@@ -20,3 +20,9 @@ This project is an assembler written in OCaml that translates Hack assembly lang
 1. **Clone the Repository:**  
    ```bash
    git clone https://github.com/KarthikKrishnaMCS/hack_assembler.git
+2. **Navigate to the Project Directory:**  
+   ```bash
+   cd hack_assembler
+1. **Build the Project Using Dune**  
+   ```bash
+   dune build
